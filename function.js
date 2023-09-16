@@ -14,7 +14,9 @@ function searchCreate(pokemonDetails) {
     .join(", ");
   const sprites = pokemonDetails.sprites;
   const name = pokemonDetails.name;
-
+  //throw ,instanceof ,лексическое окружение  
+  // imper deck pod
+  //
   const pokemonItem = `
       <li class="pokemon">
         <img src="${sprites.front_default}" alt="" class="pokemon-pic">
@@ -71,6 +73,3 @@ function search() {
   searchInput.value = "";
 }
 
-getPokemonData(`${BASE_API}pokemon?limit=1100&offset=${offset}`).then((data) =>
-  createPokemonElements(data.results)
-);

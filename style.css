@@ -7,14 +7,61 @@ ul{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    width: 900px;
+    margin: 50px auto 0 ;
 }
 .cont{
     padding:10px 200px ;
 }
+p{    
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-family:sans-serif;
+}
 .pokemon{
     text-align: center;
-    width: 300px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 15px;
 }
 body{
     margin: 0;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+.inp{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: white;
+    outline: none;
+}
+.inp::placeholder{
+    color: gray;
+    font-weight: 700;
+}
+.btn{
+    padding: 5px 40px;
+    border-radius:15px ;
+    background-color: transparent;
+    border:1px solid white;
+    color: white;
+    font-weight: 900;
+    margin-left: 20px;
+    
+}
+.HomeVideo{
+    position: fixed;
+    z-index: -999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0 ;
+    width: 100%;
+    height: 200%;
+}
+.js-video{
+    width: 100%;
 }
